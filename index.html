@@ -8,61 +8,66 @@
   </head>
   <body>
     <header>
-      <center><h1, class="h1Header">SERVICE INFORMATIQUE HERMONVILLE</h1></center>
+      <center><h1 class="h1Header">SERVICE INFORMATIQUE HERMONVILLE</h1></center>
     </header>
     <main>
       <div class="sendMail">
+        <!--
         <img div ="logo_contacter" src="https://sciences.edu.umontpellier.fr/files/2018/10/FDS_Picto-Informatique.png" alt="Logo" width=10% height=10% align="right" align="top" />
+        -->
         <div class="sendMail_main">
-            <h2>CONTACTER</h2><br>
             <div class="form">
               <form>
-                <label for="email">Veuillez renseignez votre e-mail</label>
+                <center><h2 class="contact">ME CONTACTER</h2><br>
+                
+                <label for="email">Rentrez votre e-mail</label><br>
                 <input type="email"><br><br>
 
-                <label for="number">Veuillez renseignez votre numéro de téléphone</label>
+                <label for="number">Rentrez votre numéro de téléphone</label><br>
                 <input type="text"><br><br>
 
-                <label for="name">Veuillez renseignez votre nom</label>
+                <label for="name">Rentrez votre nom</label><br>
                 <input type="name"><br><br>
 
-                <label for="text">Entrez votre messages</label>
+                <label for="name">Le problème concerne</label><br>
+                <input type="checkbox"><label for="text">Mon téléphone</label><br>
+                <input type="checkbox"><label for="text">Ma tablette</label><br>
+                <input type="checkbox"><label for="text">Mon ordianteur</label><br>
+                <input type="checkbox"><label for="text">Autre</label><br><br>
+
+                <label for="text">Entrez votre messages</label><br>
                 <input type="text"><br><br>
 
                 <button type="submit">Envoyez</button><br><br>
+
               </form>
             </div>
-        </div>
+        </div></center>
       </div>
     </main>
   </body>
   <style>
+    form{
+      background-color: rgb(168, 205, 240);
+      border-radius: 0rem;
+      margin: 10px;
+      padding: 10px;
+    }
     .sendMail_main{
       margin: 15px;
       padding: 15px;
     }
     .h1Header{
       font-family: Arial, Helvetica, sans-serif;
-      font-size: xx-large;
-      letter-spacing: 7px;
+      letter-spacing: 1.2px;
     }
     h1, h2, h3, h4, h5, h6, p, label{
       font-family: Arial, Helvetica, sans-serif;
-    }
-    body{
-      background-color: aliceblue;
-      padding: 30px;
-      margin: 30px;
     }
     header{
       background-color: rgb(208, 229, 249);
       padding: 20px;
       margin: 20px;
-    }
-    .sendMail{
-      margin: 20px;
-      padding: 20px;
-      background-color: rgb(208, 229, 249);
     }
     button{
       padding: 10px, 35px;
@@ -71,7 +76,7 @@
       background: #2196f3;
       color: #fff;
       cursor: pointer;
-      border-radius: 3px;
+      border-radius: 5px;
       border: none;
     }
   </style>

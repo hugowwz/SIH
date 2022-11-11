@@ -21,13 +21,13 @@
                 <center><h2 class="contact">ME CONTACTER</h2><br>
                 
                 <label for="email">Rentrez votre e-mail</label><br>
-                <input type="email"><br><br>
+                <input class="inputEmail" type="email"><br><br>
 
                 <label for="number">Rentrez votre numéro de téléphone</label><br>
-                <input type="text"><br><br>
+                <input class="inputNumber" type="text"><br><br>
 
                 <label for="name">Rentrez votre nom</label><br>
-                <input type="name"><br><br>
+                <input class="inputName" type="name"><br><br>
 
                 <label for="name">Le problème concerne</label><br>
                 <input type="checkbox"><label for="text">Mon téléphone</label><br>
@@ -36,7 +36,7 @@
                 <input type="checkbox"><label for="text">Autre</label><br><br>
 
                 <label for="text">Entrez votre messages</label><br>
-                <input type="text"><br><br>
+                <textarea class="inputText" name="pb" id="pb" cols="30" rows="10" style="width: 194px; height: 71px;"></textarea><br><br>
 
                 <button type="submit">Envoyez</button><br><br>
 
@@ -47,6 +47,18 @@
     </main>
   </body>
   <style>
+    .inputText{
+      border-radius: 1rem;
+    }
+    .inputName{
+      border-radius: 1rem;
+    }
+    .inputNumber{
+      border-radius: 1rem;
+    }
+    .inputEmail{
+      border-radius: 1rem;
+    }
     form{
       background-color: rgb(168, 205, 240);
       border-radius: 0rem;
@@ -59,7 +71,7 @@
     }
     .h1Header{
       font-family: Arial, Helvetica, sans-serif;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
     }
     h1, h2, h3, h4, h5, h6, p, label, button{
       font-family: Arial, Helvetica, sans-serif;
@@ -79,9 +91,6 @@
       cursor: pointer;
       border-radius: 5px;
       border: none;
-    }
-    button::after{
-      background-color: #fff;
     }
   </style>
 </html>
